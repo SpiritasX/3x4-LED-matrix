@@ -12,11 +12,11 @@ Isr function gets called every time a button is pressed and it checks what butto
 
 # Links
 
-https://www.onsemi.com/pub/Collateral/MC74HC595-D.PDF
-http://www.ti.com/lit/ds/symlink/sn74hc165.pdf
-https://www.arduino.cc/en/Tutorial/ShiftIn
-https://www.arduino.cc/en/Tutorial/ShiftOut
-https://www.arduino.cc/reference/en/
+https://www.onsemi.com/pub/Collateral/MC74HC595-D.PDF                                                         
+http://www.ti.com/lit/ds/symlink/sn74hc165.pdf                                                                
+https://www.arduino.cc/en/Tutorial/ShiftIn                                                                    
+https://www.arduino.cc/en/Tutorial/ShiftOut                                                                   
+https://www.arduino.cc/reference/en/                                                                          
 
 If you have any questions you can contact me on:
 
