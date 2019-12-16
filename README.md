@@ -10,3 +10,11 @@ https://www.arduino.cc/reference/en/language/functions/external-interrupts/attac
 Loop function has one for loop that goes infinitely from 0 to 16 and back every multiple of 2.
 Binary function that that number - 1 and generates the 12 digit number that gets outputed on the shift registers. If any of the three buttons are pressed, this function generates 4 of those 12 bits randomly by taking a random number between 0 and 15.
 Isr function gets called every time a button is pressed and it checks what button exactly was pressed.
+
+If you have any questions you can contact me on:
+
+Instagram: dejan_bogovac
+
+Facebook: Dejan Bogovac
+
+Gmail: deja.bogovac@gmail.com
