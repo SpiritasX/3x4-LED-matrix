@@ -29,11 +29,8 @@ void loop() {
       temp = 1 / temp;
       
     elapsedMillis counter;
-    while(counter < 300) {
+    while(counter < 500) {
       binary(i - 1);
-      if((millis() % 300 < 10 || millis() % 300 > 290) || (millis() % brzina < 10 || millis() % brzina > brzina - 10)) {
-        binary(i - 1);
-      }
   
       digitalWrite(latchPinSIPO, LOW);
       for(int k = 0; k < 12; k++) {
@@ -63,16 +60,16 @@ void binary(int x) {
       temp = random(0, 15);
       for(int j = 0; j < 4; j++) {
         bin <<= 1;
-        bin |= temp % 2;
-        temp /= 2;
+        bin |= temp & 1;
+        temp >>= 1;
       }
     } else {
       for(int j = 0; j < 4; j++) {
         if((i * 4 + j) % 4 == 0)
           temp = x;
         bin <<= 1;
-        bin |= temp % 2;
-        temp /= 2;
+        bin |= temp & 1;
+        temp >>= 1;
       }
     }
   }
@@ -105,7 +102,7 @@ void isr() {
     case 34:
     case 36:
     case 40:
-      if(brzina == 300)
+      if(brzina == 500)
         return;
       brzina += 5;
       Serial.print("Brzina = ");
